@@ -23,10 +23,10 @@ export function CarouselItem({ continent }: CarouselItemProps) {
         <Text
           as="h1"
           fontWeight="bold"
-          fontSize={['4xl', '2.75rem', '5xl']}
+          fontSize={['3xl', '2.5rem', '5xl']}
           color="gray.100"
           lineHeight={['10', '3.5rem', '4.5rem']}
-          mt={[90, 130, 180]}
+          mt={[100, 130, 180]}
           mb={['2', '3', '4']}
         >
           {continent.name}
@@ -34,7 +34,7 @@ export function CarouselItem({ continent }: CarouselItemProps) {
         <Text
           as="h2"
           fontWeight="bold"
-          fontSize={['lg', 'xl', '2xl']}
+          fontSize={['md', 'lg', '2xl']}
           color="gray.200"
           lineHeight={['4', '5', '6']}
         >
