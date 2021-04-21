@@ -1,4 +1,5 @@
 export type VisitedCity = {
+  slug: string
   name: string
   img: string
   countryImg: string

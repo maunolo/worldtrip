@@ -59,6 +59,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   )
 
   const visitedCities = visitedCitiesResponse.results.map(city => ({
+    slug: city.uid,
     name: city.data.name,
     img: city.data.img.url,
     countryImg: city.data.country_img.url,

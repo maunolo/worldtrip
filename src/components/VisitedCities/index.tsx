@@ -14,30 +14,30 @@ export function VisitedCities({ cities }: VisitedCitiesProps) {
       mx="auto"
       mt={['6', '10', '16']}
       mb={['4', '6', '8']}
+      px={['4', '16', '16']}
+      direction="column"
     >
-      <Flex mx={['4', '16', '16']} w="full" direction="column">
-        <Text
-          as="h1"
-          mb={['4', '8', '10']}
-          fontSize={['xl', '2xl', '3xl']}
-          color="gray.700"
-          fontWeight="medium"
-        >
-          Cidades +100
-        </Text>
-        <SimpleGrid
-          w="full"
-          gridRowGap="10"
-          gridColumnGap="10"
-          minChildWidth="256px"
-          justifyContent="space-between"
-          justifyItems="center"
-        >
-          {cities.map(city => (
-            <CityCard city={city} />
-          ))}
-        </SimpleGrid>
-      </Flex>
+      <Text
+        as="h1"
+        mb={['4', '8', '10']}
+        fontSize={['xl', '2xl', '3xl']}
+        color="gray.700"
+        fontWeight="medium"
+      >
+        Cidades +100
+      </Text>
+      <SimpleGrid
+        w="full"
+        gridRowGap="10"
+        gridColumnGap="10"
+        minChildWidth="256px"
+        justifyContent="space-between"
+        justifyItems="center"
+      >
+        {cities.map(city => (
+          <CityCard key={city.slug} city={city} />
+        ))}
+      </SimpleGrid>
     </Flex>
   )
 }
