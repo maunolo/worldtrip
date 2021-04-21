@@ -1,5 +1,5 @@
 import { Divider } from '@chakra-ui/react'
-import { Banner } from '../components/Banner'
+import { HomeBanner } from '../components/HomeBanner'
 import { Header } from '../components/Header'
 import { CarouselSection } from '../components/CarouselSection'
 import { TravelTypes } from '../components/TravelTypes'
@@ -21,7 +21,7 @@ export default function Home({ continents }: HomeProps) {
   return (
     <>
       <Header />
-      <Banner />
+      <HomeBanner />
       <TravelTypes />
       <Divider
         borderColor="gray.700"

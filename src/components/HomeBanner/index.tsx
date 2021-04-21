@@ -2,7 +2,7 @@ import { Flex, Box } from '@chakra-ui/react'
 import { Airplane } from './Airplane'
 import { Heading } from './Heading'
 
-export function Banner() {
+export function HomeBanner() {
   return (
     <Box
       bgImage="url('/banner/background.png')"
